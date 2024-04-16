@@ -1,15 +1,6 @@
-function Task15() {
+function Task18() {
 
-    const str = 'BOLS';
-
-    function checkStr() {
-        try {
-            if (!/^[\w\.\_\-\@\$\&]{8,}/gm.test(str)) throw new Error('not valid pwd');
-            alert(true)
-        } catch (er) {
-            alert(er.message)
-        }
-    }
+   
 
     return <div>
         <p>
@@ -18,9 +9,9 @@ function Task15() {
             числа, буквы, !@#$^&*. Результат отобразить в консоль
         </p>
 
-        <button onClick={checkStr}>КЛАЦ</button>
+        <button>КЛАЦ</button>
     </div>
 }
 
 
-export default Task15
+export default Task18

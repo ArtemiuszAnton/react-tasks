@@ -1,4 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Task001 from './pages/Task001/Task001';
+import Task002 from './pages/Task002/Task002';
+import Task003 from './pages/Task003/Task003';
+import Task004 from './pages/Task004/Task004';
+import Task005 from './pages/Task005/Task005';
+import Task006 from './pages/Task006/Task006';
 import Task1 from './pages/Task1/Task1';
 import Task2 from './pages/Task2/Task2';
 import Task3 from './pages/Task3/Task3';
@@ -14,11 +21,23 @@ import Task12 from './pages/Task12/Task12';
 import Task13 from './pages/Task13/Task13';
 import Task14 from './pages/Task14/Task14';
 import Task15 from './pages/Task15/Task15';
+import Task16 from './pages/Task16/Task16';
+import Task17 from './pages/Task17/Task17';
+import Task18 from './pages/Task18/Task18';
+import Task19 from './pages/Task19/Task19';
+import Task20 from './pages/Task20/Task20';
 
 function App() {
   return (
     <div >
       <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/task001' element={<Task001 />} />
+        <Route path='/task002' element={<Task002 />} />
+        <Route path='/task003' element={<Task003 />} />
+        <Route path='/task004' element={<Task004 />} />
+        <Route path='/task005' element={<Task005 />} />
+        <Route path='/task006' element={<Task006 />} />
         <Route path='/task1' element={<Task1 />} />
         <Route path='/task2' element={<Task2 />} />
         <Route path='/task3' element={<Task3 />} />
@@ -34,6 +53,11 @@ function App() {
         <Route path='/task13' element={<Task13 />} />
         <Route path='/task14' element={<Task14 />} />
         <Route path='/task15' element={<Task15 />} />
+        <Route path='/task16' element={<Task16 />} />
+        <Route path='/task17' element={<Task17 />} />
+        <Route path='/task18' element={<Task18 />} />
+        <Route path='/task19' element={<Task19 />} />
+        <Route path='/task20' element={<Task20 />} />
       </Routes>
     </div>
   );

@@ -1,7 +1,10 @@
 function Task18() {
 
-const color = ['red', 'white', 'blue']
+    const color = ['red', 'white', 'blue'];
 
+    function changeColor(e) {
+        e.target.style = `background:${color[Math.round(Math.random() * color.length)]}`
+    }
 
     return <>
         <p>
@@ -10,7 +13,7 @@ const color = ['red', 'white', 'blue']
             выбор цвета из массива при каждом клике.
         </p>
 
-        <button onClick={}>КЛАЦ</button>
+        <button onClick={changeColor}>КЛАЦ</button>
     </>
 }
 

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 function Task001() {
     const [color, setColor] = useState('black');
@@ -18,8 +19,9 @@ function Task001() {
 
         <h1 style={{ color: color }}>TEXT</h1 >
         <button onClick={changeColor}>{flag ? 'delete color' : 'Add color'}</button>
-    </>
 
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+    </>
 
 }
 

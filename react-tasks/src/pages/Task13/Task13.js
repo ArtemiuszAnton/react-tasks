@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Task13() {
 
     const arr = ['RAZ', 'DWA', 'TRI', 'dwfwfwfw'].map(el =>
@@ -11,6 +14,9 @@ function Task13() {
 
         </h1>
         {arr}
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </div>
 }
 

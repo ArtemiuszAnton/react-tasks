@@ -1,20 +1,32 @@
-function Task20() {
+import { useState } from "react"
+import { Link } from "react-router-dom";
 
-    const arr = ['FIRST ELEM', 'SECOND ELEM', 'THIRD ELEM', 'FOURTH ELEM'];
 
-    function randomElem() {
-        console.log(arr[Math.floor(Math.random() * arr.length)]);
+function Task22() {
+
+    const [inp, setInp] = useState('');
+
+    const getInp = (e) => setInp(e.target.value);
+
+    const isPalindrom = () => {
+        inp.split('').reverse().join('') == inp ?
+            console.log(true) : console.log(false)
     }
 
     return <>
         <p>
-            6. Создайте компонент с массивом элементов и кнопкой.При каждом клике на
-            кнопку выбирайте случайный элемент из массива и отображайте его в консоль.
+            2. Создайте компонент с полем ввода и кнопкой. По клику на кнопку собрать
+            данные из input и проверить вводимую строку на палиндром. Результат
+            отображать в консоль
         </p>
 
-        <button onClick={randomElem}>КЛАЦ</button>
+        <input onChange={getInp} type="text" />
+        <button onClick={isPalindrom}>КЛАЦ</button>
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </>
 }
 
 
-export default Task20
+export default Task22

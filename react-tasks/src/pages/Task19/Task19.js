@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Task19() {
 
     const arr = [12, 343, 5, 67, 8, 89, 7];
@@ -13,6 +16,9 @@ function Task19() {
         </p>
 
         <button onClick={sumArray}>КЛАЦ</button>
+        
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </div>
 }
 

@@ -1,20 +1,27 @@
-function Task20() {
+import { useState } from "react"
+import { Link } from "react-router-dom";
 
-    const arr = ['FIRST ELEM', 'SECOND ELEM', 'THIRD ELEM', 'FOURTH ELEM'];
 
-    function randomElem() {
-        console.log(arr[Math.floor(Math.random() * arr.length)]);
-    }
+function Task21() {
+
+    const [inp, setInp] = useState('');
+
+    const showInpValue = (e) => setInp(e.target.value);
 
     return <>
-        <p>
-            6. Создайте компонент с массивом элементов и кнопкой.При каждом клике на
-            кнопку выбирайте случайный элемент из массива и отображайте его в консоль.
-        </p>
+        <h1>
+            1. Создайте компонент с полем ввода и параграфом. При вводе данных в input
+            отображать вводимое значение в параграф текущей страницы
+        </h1>
 
-        <button onClick={randomElem}>КЛАЦ</button>
+        <p>{inp}</p>
+
+        <input onChange={showInpValue} type="text" />
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </>
 }
 
 
-export default Task20
+export default Task21

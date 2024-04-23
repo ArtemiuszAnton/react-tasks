@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Task5() {
     const arr = ['rrree', '@fdf', 2222, 'eere', 3333].map((el) => {
         if (isNaN(el)) {
@@ -16,6 +19,9 @@ function Task5() {
 
         </p>
         {arr}
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </div>
 }
 

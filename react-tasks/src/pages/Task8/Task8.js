@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Task8() {
     const arr = [23, 4, 6, 8, 9];
 
@@ -8,6 +11,9 @@ function Task8() {
         </p>
        максимальное: {Math.max(...arr)}, 
        минимальное: {Math.min(...arr)}
+
+       <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </div>
 }
 

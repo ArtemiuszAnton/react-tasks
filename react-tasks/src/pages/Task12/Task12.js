@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Task12() {
 
     const arr = [1, 2, 4, 4, 5].map(el => el % 2 == 0 ? 'четное ' : 'нечетное ')
@@ -10,6 +13,9 @@ function Task12() {
 
         </p>
         {arr}
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </>
 }
 

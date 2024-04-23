@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 function Task005() {
     const [input, setInput] = useState({ name: '', surname: '', pwd: '' });
@@ -21,6 +23,9 @@ function Task005() {
         <input type="text" id="surname" onChange={showInpValue} />
         <input type="text" id="pwd" onChange={showInpValue} />
         <button onClick={()=>{console.log(input);}}>click</button>
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </>
 }
 

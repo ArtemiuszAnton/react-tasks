@@ -1,4 +1,5 @@
 import img from './assets/Vector.svg';
+import { Link } from 'react-router-dom';
 
 function Task4() {
     const arr = ['asasa', 'dssdsd', 'sddssd'].map((el) =>
@@ -11,6 +12,9 @@ function Task4() {
             массива, а также картинку. Каждая итерация будет возвращать
         </p>
         {arr}
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </div>
 }
 

@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Task14() {
 
     const uniqArr = [];
@@ -10,6 +13,9 @@ function Task14() {
             Задания с Event:
         </p>
         {uniqArr}
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </>
 }
 

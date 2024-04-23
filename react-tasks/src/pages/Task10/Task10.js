@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Task10() {
 
     const arr = [1, 2, 4, 4, 5, 'ee', 'yy', '3'].map((el) => typeof el === 'number' ?
@@ -12,6 +15,9 @@ function Task10() {
 
         </p>
         {arr}
+        
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </div>
 }
 

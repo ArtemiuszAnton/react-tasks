@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Task17() {
 
     function inpPalindrome(e) {
@@ -13,6 +16,9 @@ function Task17() {
         </p>
 
         <input type="text" onKeyDown={inpPalindrome} />
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </>
 }
 

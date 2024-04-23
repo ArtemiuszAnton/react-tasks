@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import draniki from '../Task11/assets/draniki.jpg';
 import pelmeni from './assets/pelmeni.webp';
 import kebab from './assets/kebab.png';
+
 
 function Task11() {
 
@@ -26,6 +28,9 @@ function Task11() {
         </p>
 
         {arr}
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
     </>
 }
 

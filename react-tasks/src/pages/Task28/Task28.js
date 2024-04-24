@@ -1,21 +1,28 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-function Task20() {
+function Task28() {
 
-    const arr = ['FIRST ELEM', 'SECOND ELEM', 'THIRD ELEM', 'FOURTH ELEM'];
+    const [count, setCount] = useState(0)
 
-    function randomElem() {
-        console.log(arr[Math.floor(Math.random() * arr.length)]);
-    }
+    const getCountPlus = () => setCount(count + 1)
+    const getCountMinus = () => setCount(count - 1)
 
     return <>
         <p>
-            6. Создайте компонент с массивом элементов и кнопкой.При каждом клике на
-            кнопку выбирайте случайный элемент из массива и отображайте его в консоль.
+            8. Дополните предыдущую задачу. Создайте компонент с 2 кнопками и параграфом
+            для отображения результата счетчика (изначально счетчик равен 0). Ваша задача
+            так реализовать функционал, чтобы при клике на кнопку +1 автоматически
+            прибавлялась +1 к стейту счетчика, а при клике на кнопку -1, происходило
+            вычитание значения 1
+
         </p>
 
-        <button onClick={randomElem}>КЛАЦ</button>
+        <p>{count}</p>
+        <button onClick={getCountPlus}>+1</button>
+        <button onClick={getCountMinus}>-1</button>
+
 
         <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
 
@@ -23,4 +30,4 @@ function Task20() {
 }
 
 
-export default Task20
+export default Task28

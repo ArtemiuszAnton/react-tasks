@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-function Task005() {
+function Task35() {
     const [input, setInput] = useState({ name: '', surname: '', pwd: '' });
 
     function showInpValue(e) {
@@ -30,4 +30,4 @@ function Task005() {
 }
 
 
-export default Task005
+export default Task35

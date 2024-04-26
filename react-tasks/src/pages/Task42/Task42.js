@@ -1,0 +1,34 @@
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
+
+function Task42() {
+
+    const [ip, setIp] = useState('');
+
+    const getIp = async () => {
+        const response = await axios.get('https://api.ipify.org/?format=json');
+
+        setIp(response.data.ip)
+    }
+
+    useEffect(() => {
+        getIp()
+    }, [])
+
+    return <>
+        <p>
+            2. При ПЕРВИЧНОМ рендеринге (useEffect) используя axios обращаться к
+            https://api.ipify.org/?format=json. API возвращает ваш ip-адрес. Ваша задача
+            отображать ip-адрес в тег h1.
+        </p>
+
+        <p>Yuor IP: {ip}</p>
+
+        <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
+
+    </>
+}
+
+
+export default Task42

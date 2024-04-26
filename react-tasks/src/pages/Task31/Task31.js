@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
 
-function Task001() {
+function Task31() {
     const [color, setColor] = useState('black');
     const [flag, setFlag] = useState(false);
     const arr = ['yellow', 'green', 'purple', 'orange'];
@@ -26,4 +26,4 @@ function Task001() {
 }
 
 
-export default Task001
+export default Task31

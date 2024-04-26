@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-function Task002() {
+function Task32() {
 
     const [flag, setFlag] = useState(false);
 
@@ -30,4 +30,4 @@ function Task002() {
 }
 
 
-export default Task002
+export default Task32

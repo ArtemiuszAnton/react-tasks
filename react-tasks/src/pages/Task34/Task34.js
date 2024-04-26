@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-function Task004() {
+function Task34() {
     const [text, setText] = useState('');
 
     function showText(e) {
@@ -22,4 +22,4 @@ function Task004() {
 }
 
 
-export default Task004
+export default Task34

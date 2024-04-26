@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-function Task003() {
+function Task33() {
     const [click, setClick] = useState(0)
     function countClick() {
         setClick(click + 1)
@@ -23,4 +23,4 @@ function Task003() {
 }
 
 
-export default Task003
+export default Task33

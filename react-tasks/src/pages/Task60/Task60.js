@@ -1,10 +1,13 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
 function Task60() {
 
-const 
+    // const [time, setTime] = useState(0);
+
+    // const getTime = () => {
+    //     setTime()
+    // }
 
     return <>
         <p>

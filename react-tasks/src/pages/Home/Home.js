@@ -74,7 +74,15 @@ function Home() {
             <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task54'}>Перейти к задаче 54</Link></button >
         </div>
 
-
+        <h4 style={{ display: 'block', textAlign: 'center' }}>Задачи c useRef</h4>
+        <div style={{ display: "grid", gridTemplateColumns: 'repeat(3, 1fr)', gap: 15 }}>
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task62'}>Перейти к задаче 62</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task63'}>Перейти к задаче 63</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task64'}>Перейти к задаче 64</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task65'}>Перейти к задаче 65</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task66'}>Перейти к задаче 66</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task67'}>Перейти к задаче 67</Link></button >
+        </div>
     </>
 }
 

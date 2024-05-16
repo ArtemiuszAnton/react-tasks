@@ -1,9 +1,10 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 
 function Task67() {
 
-
+    const h1 = useRef();
 
     return <>
         <p>
@@ -14,6 +15,13 @@ function Task67() {
             элемента.)
         </p>
 
+        <button
+            onMouseEnter={() => h1.current.textContent = 'tooltips'}
+            onMouseLeave={() => h1.current.textContent = ''}>
+            FOCUS
+        </button>
+
+        <p ref={h1}></p>
 
         <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
 

@@ -83,6 +83,24 @@ function Home() {
             <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task66'}>Перейти к задаче 66</Link></button >
             <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task67'}>Перейти к задаче 67</Link></button >
         </div>
+
+        <h4 style={{ display: 'block', textAlign: 'center' }}>Задачи c useMemo</h4>
+        <div style={{ display: "grid", gridTemplateColumns: 'repeat(3, 1fr)', gap: 15 }}>
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task68'}>Перейти к задаче 68</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task69'}>Перейти к задаче 69</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task70'}>Перейти к задаче 70</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task71'}>Перейти к задаче 71</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task72'}>Перейти к задаче 72</Link></button >
+        </div>
+
+        <h4 style={{ display: 'block', textAlign: 'center' }}>Задачи c useCallBack</h4>
+        <div style={{ display: "grid", gridTemplateColumns: 'repeat(3, 1fr)', gap: 15 }}>
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task73'}>Перейти к задаче 73</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task74'}>Перейти к задаче 74</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task75'}>Перейти к задаче 75</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task76'}>Перейти к задаче 76</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task77'}>Перейти к задаче 77</Link></button >
+        </div>
     </>
 }
 

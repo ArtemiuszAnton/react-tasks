@@ -101,6 +101,14 @@ function Home() {
             <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task76'}>Перейти к задаче 76</Link></button >
             <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task77'}>Перейти к задаче 77</Link></button >
         </div>
+
+        <h4 style={{ display: 'block', textAlign: 'center' }}>Задачи c useContext</h4>
+        <div style={{ display: "grid", gridTemplateColumns: 'repeat(3, 1fr)', gap: 15 }}>
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task78'}>Перейти к задаче 78</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task79'}>Перейти к задаче 79</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task80'}>Перейти к задаче 80</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task81'}>Перейти к задаче 81</Link></button >
+        </div>
     </>
 }
 

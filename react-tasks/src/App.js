@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 
+import { Task78Context } from './context';
+
 import Task1 from './pages/Task1/Task1';
 import Task2 from './pages/Task2/Task2';
 import Task3 from './pages/Task3/Task3';
@@ -78,6 +80,10 @@ import Task74 from './pages/Task74/Task74';
 import Task75 from './pages/Task75/Task75';
 import Task76 from './pages/Task76/Task76';
 import Task77 from './pages/Task77/Task77';
+import Task78 from './pages/Task78/Task78';
+import Task79 from './pages/Task79/Task79';
+import Task80 from './pages/Task80/Task80';
+import Task81 from './pages/Task81/Task81';
 
 function App() {
   return (
@@ -161,7 +167,16 @@ function App() {
         <Route path='/task75' element={<Task75 />} />
         <Route path='/task76' element={<Task76 />} />
         <Route path='/task77' element={<Task77 />} />
+        <Route path='/task79' element={<Task79 />} />
+        <Route path='/task80' element={<Task80 />} />
+        <Route path='/task81' element={<Task81 />} />
       </Routes>
+
+      <Task78Context.Provider value={{ name: 'User Name', surname: 'User Surname', age: 18, email: 'email@email.com' }}>
+        <Routes>
+          <Route path='/task78' element={<Task78 />} />
+        </Routes>
+      </Task78Context.Provider>
     </div>
   );
 }

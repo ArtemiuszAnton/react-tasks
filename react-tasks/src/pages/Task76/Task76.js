@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function Task76() {
 
-    const [color, setColor] = useState(['green', 'purple', 'red', 'blue']);
+    const [color, setColor] = useState('white');
 
-    const getColor = useCallback((e) => color = setColor(e.target.textContent))
+    const getColor = useCallback((e) => setColor(e.target.textContent), [color])
 
     return <>
         <p>
@@ -16,9 +16,15 @@ function Task76() {
             цвета.
         </p>
 
-        <p style={{ backgroundColor: color }}></p>
+        <p style={{ backgroundColor: color }}>{color != 'white' ? color : ''}</p>
 
-        {color.map(el => <p onClick={getColor}>{el}</p>)}
+        <ul onClick={getColor}>
+                <li>green</li>
+                <li>purple</li>
+                <li>red</li>
+                <li>blue</li>
+                <li>yellow</li>
+        </ul>
 
         <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
 

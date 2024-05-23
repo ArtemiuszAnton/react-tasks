@@ -109,6 +109,14 @@ function Home() {
             <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task80'}>Перейти к задаче 80</Link></button >
             <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task81'}>Перейти к задаче 81</Link></button >
         </div>
+
+        <h4 style={{ display: 'block', textAlign: 'center' }}>Задачи c useReducer</h4>
+        <div style={{ display: "grid", gridTemplateColumns: 'repeat(3, 1fr)', gap: 15 }}>
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task82'}>Перейти к задаче 82</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task83'}>Перейти к задаче 83</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task84'}>Перейти к задаче 84</Link></button >
+            <button style={{ background: 'pink', display: 'block', marginTop: 5, borderRadius: 4, padding: 5 }}><Link to={'/task85'}>Перейти к задаче 85</Link></button >
+        </div>
     </>
 }
 

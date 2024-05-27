@@ -1,12 +1,11 @@
+import { useReducer} from "react";
 import { Link } from "react-router-dom";
 
 
-function  reducer(state,data) {
+function reducer(_state, data) {
     switch (data.action) {
-        case:
-            
-            break;
-    
+        case 'addValue':
+            return data.value;
         default:
             break;
     }
@@ -14,7 +13,7 @@ function  reducer(state,data) {
 
 function Task84() {
 
-
+    const [inp, dispatch] = useReducer(reducer, '')
 
     return <>
         <p>
@@ -24,7 +23,7 @@ function Task84() {
 
         <h1>{inp}</h1>
 
-        <input type="text" onChange={}/>
+        <input type="text" onChange={(e) => dispatch({ action: 'addValue', value: e.target.value })} />
 
         <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
 

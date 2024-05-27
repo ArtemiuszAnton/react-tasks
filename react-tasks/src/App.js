@@ -88,6 +88,7 @@ import Task82 from './pages/Task82/Task82';
 import Task83 from './pages/Task83/Task83';
 import Task84 from './pages/Task84/Task84';
 import Task85 from './pages/Task85/Task85';
+import Task86 from './pages/Task86/Task86';
 
 function App() {
   return (
@@ -178,6 +179,7 @@ function App() {
         <Route path='/task83' element={<Task83 />} />
         <Route path='/task84' element={<Task84 />} />
         <Route path='/task85' element={<Task85 />} />
+        <Route path='/task86' element={<Task86 />} />
       </Routes>
 
       <Task78Context.Provider value={{ name: 'User Name', surname: 'User Surname', age: 18, email: 'email@email.com' }}>

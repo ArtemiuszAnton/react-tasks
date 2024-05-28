@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 
-import { Task78Context } from './context';
+import { Task78Context, Task91Context } from './context';
 
 import Task1 from './pages/Task1/Task1';
 import Task2 from './pages/Task2/Task2';
@@ -89,6 +89,12 @@ import Task83 from './pages/Task83/Task83';
 import Task84 from './pages/Task84/Task84';
 import Task85 from './pages/Task85/Task85';
 import Task86 from './pages/Task86/Task86';
+import Task87 from './pages/Task87/Task87';
+import Task88 from './pages/Task88/Task88';
+import Task89 from './pages/Task89/Task89';
+import Task90 from './pages/Task90/Task90';
+import Task91 from './pages/Task91/Task91';
+import Task92 from './pages/Task92/Task92';
 
 function App() {
   return (
@@ -180,6 +186,11 @@ function App() {
         <Route path='/task84' element={<Task84 />} />
         <Route path='/task85' element={<Task85 />} />
         <Route path='/task86' element={<Task86 />} />
+        <Route path='/task87' element={<Task87 />} />
+        <Route path='/task88' element={<Task88 />} />
+        <Route path='/task89' element={<Task89 />} />
+        <Route path='/task90' element={<Task90 />} />
+        <Route path='/task92' element={<Task92 />} />
       </Routes>
 
       <Task78Context.Provider value={{ name: 'User Name', surname: 'User Surname', age: 18, email: 'email@email.com' }}>
@@ -187,6 +198,12 @@ function App() {
           <Route path='/task78' element={<Task78 />} />
         </Routes>
       </Task78Context.Provider>
+
+      <Task91Context.Provider value={{ spain: 'Real Madrid', germany: 'Bayer', italy: 'Inter', england: 'Man.City' }}>
+        <Routes>
+          <Route path='/task91' element={<Task91 />} />
+        </Routes>
+      </Task91Context.Provider>
     </div>
   );
 }

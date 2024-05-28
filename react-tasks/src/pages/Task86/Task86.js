@@ -1,14 +1,7 @@
 import { useReducer } from "react";
 import { Link } from "react-router-dom";
 
-const reducer = (state, data) => {
-    switch (state) {
-        case 'addValue':
-            return data.action
-        default:
-            break;
-    }
-}
+const reducer = (state, data) => data.text;
 
 function Task86() {
 
@@ -22,8 +15,8 @@ function Task86() {
             сумму 2 input. По клику на кнопку отображать результат в консоль
         </p>
 
-        <input type="text" onChange={(e) => dispatch1({ action: 'addValue', value: e.target.value })} />
-        <input type="text" onChange={(e) => dispatch2({ action: 'addValue', value: e.target.value })} />
+        <input type="text" onChange={(e) => dispatch1({ text: e.target.value })} />
+        <input type="text" onChange={(e) => dispatch2({ text: e.target.value })} />
         <button onClick={() => console.log(eval(+inp1 + +inp2))}>result</button >
 
         <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >

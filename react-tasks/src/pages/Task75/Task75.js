@@ -18,7 +18,7 @@ function Task75() {
         </p>
         <div>
             <p>{flag ? 'Active' : ''}</p>
-            <button onClick={getFlag}>{flag? 'Deactive': 'active'}</button>
+            <button onClick={getFlag}>{flag ? 'Deactive' : 'active'}</button>
         </div>
         <button style={{ background: 'pink', display: 'block', marginTop: 30, borderRadius: 4 }}><Link to={'/'}>Вернуться на главную</Link></button >
 
